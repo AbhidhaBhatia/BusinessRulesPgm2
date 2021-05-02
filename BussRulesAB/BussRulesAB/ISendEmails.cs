@@ -8,5 +8,6 @@ namespace BussRulesAB
 {
     interface ISendEmails
     {
+        void SendEmailTo(string Receipient, string Content);
     }
 }

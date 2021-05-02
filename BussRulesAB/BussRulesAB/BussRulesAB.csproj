@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
+    <Compile Include="ICommission.cs" />
+    <Compile Include="IPackingSlip.cs" />
+    <Compile Include="ISendEmails.cs" />
+    <Compile Include="Membership.cs" />
+    <Compile Include="PhysicalProduct.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Video.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

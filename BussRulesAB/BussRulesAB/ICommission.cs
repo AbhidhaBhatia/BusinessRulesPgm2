@@ -8,5 +8,6 @@ namespace BussRulesAB
 {
     interface ICommission
     {
+        void GenerateCommission(string AgentName, string Amount);
     }
 }

@@ -8,5 +8,6 @@ namespace BussRulesAB
 {
     interface IPackingSlip
     {
+        void GeneratePackingSlip(string Department, string Addon);
     }
 }
