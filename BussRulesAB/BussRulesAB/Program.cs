@@ -29,12 +29,12 @@ namespace BusinessRuleEngineAB
                 case 3:
                     Console.WriteLine("Membership Activation");
                     Membership m1 = new Membership();
-                    m1.Activate(220);
+                    m1.Activate(220, "Premium");
                     break;
                 case 4:
                     Console.WriteLine("Membership upgrade");
                     Membership m2 = new Membership();
-                    m2.Upgrade(225);
+                    m2.Upgrade(225, "Normal");
                     break;
                 case 5:
                     Console.WriteLine("Video");

@@ -9,11 +9,12 @@ namespace BusinessRuleEngineAB
 {
     class Membership : ISendEmails
     {
-        public int id;
-        public string type;
-        public void Activate(int id)
+        public int ID { get; set; }
+        public string Type { get; set; }
+
+        public void Activate(int id, string type)
         {
-            SendEmailTo("User " + id, "Membership Activated");
+            SendEmailTo("User " + id, "Membership Activated of Type " + type);
         }
 
         public void SendEmailTo(string Receipient, string Content)
@@ -21,9 +22,9 @@ namespace BusinessRuleEngineAB
             Console.WriteLine("Email sent to " + Receipient + " with Content " + Content);
         }
 
-        public void Upgrade(int id)
+        public void Upgrade(int id, string type)
         {
-            SendEmailTo("User " + id, "Membership Upgraded");
+            SendEmailTo("User " + id, "Membership Upgraded of Type " + type);
         }
     }
 }
